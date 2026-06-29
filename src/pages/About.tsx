@@ -4,7 +4,7 @@ import SectionHeading from "@/components/SectionHeading";
 import CTABanner from "@/components/CTABanner";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
-import heroField from "@/assets/hero-field.jpg";
+import bannerAbout from "@/assets/banner-about.jpg";
 import aboutLab from "@/assets/about-lab.jpg";
 import { Target, Eye, Sprout, FlaskConical, ShieldCheck, Package, Truck, Leaf, Award } from "lucide-react";
 
@@ -27,7 +27,7 @@ export default function About() {
       <PageBanner
         title="About Elkenno Life Sciences"
         subtitle="A science-led organic fertilizer manufacturer rooted in sustainable Indian agriculture."
-        image={heroField}
+        image={bannerAbout}
       />
 
       {/* Story */}

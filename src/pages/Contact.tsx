@@ -6,7 +6,7 @@ import { toast } from "sonner";
 import { MapPin, Phone, Mail, Clock, Send, ChevronDown, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import SEO from "@/components/SEO";
 import PageBanner from "@/components/PageBanner";
-import heroSoil from "@/assets/hero-soil.jpg";
+import bannerContact from "@/assets/banner-contact.jpg";
 
 const schema = z.object({
   name: z.string().trim().min(2, "Please enter your name").max(80),
@@ -48,7 +48,7 @@ export default function Contact() {
       <PageBanner
         title="Contact Us"
         subtitle="Talk to our agri-experts about products, partnerships or guidance for your farm."
-        image={heroSoil}
+        image={bannerContact}
       />
 
       <section className="py-16 sm:py-20">

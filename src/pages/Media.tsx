@@ -2,8 +2,9 @@ import { useState } from "react";
 import SEO from "@/components/SEO";
 import PageBanner from "@/components/PageBanner";
 import SectionHeading from "@/components/SectionHeading";
-import heroFarmer from "@/assets/hero-farmer.jpg";
+import bannerMedia from "@/assets/banner-media.jpg";
 import heroField from "@/assets/hero-field.jpg";
+import heroFarmer from "@/assets/hero-farmer.jpg";
 import heroSoil from "@/assets/hero-soil.jpg";
 import aboutLab from "@/assets/about-lab.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
@@ -51,7 +52,7 @@ export default function Media() {
       <PageBanner
         title="Media & Updates"
         subtitle="News, stories and field moments from the Elkenno community."
-        image={heroFarmer}
+        image={bannerMedia}
       />
 
       {/* News */}
