@@ -18,14 +18,6 @@ const slides = [
     cta: { label: "Explore Products", to: "/products" },
   },
   {
-    image: heroVegetable,
-    eyebrow: "For Every Crop",
-    title: "Sustainable Organic Fertilizers for Every Crop",
-    subtitle:
-      "From paddy and cotton to vegetable farms across India — tuned to every soil.",
-    cta: { label: "Learn More", to: "/about" },
-  },
-  {
     image: heroSoil,
     eyebrow: "Earth First",
     title: "Science-Backed. Earth-Friendly. Farmer-Approved.",
