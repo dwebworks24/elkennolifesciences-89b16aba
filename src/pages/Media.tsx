@@ -2,13 +2,14 @@ import { useState } from "react";
 import SEO from "@/components/SEO";
 import PageBanner from "@/components/PageBanner";
 import SectionHeading from "@/components/SectionHeading";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import bannerMedia from "@/assets/banner-media.jpg";
 import heroField from "@/assets/hero-field.jpg";
 import heroFarmer from "@/assets/hero-farmer.jpg";
 import heroSoil from "@/assets/hero-soil.jpg";
 import aboutLab from "@/assets/about-lab.jpg";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Calendar, ArrowRight, Play } from "lucide-react";
+import { Calendar, ArrowRight, Play, ImageIcon, VideoIcon } from "lucide-react";
 
 const news = [
   {
@@ -84,39 +85,57 @@ export default function Media() {
         </div>
       </section>
 
-      {/* Gallery */}
+      {/* Gallery + Videos Tabs */}
       <section className="py-16 bg-cream/60 leaf-pattern">
         <div className="container mx-auto px-4">
           <SectionHeading eyebrow="Gallery" title="From farms and our facility" />
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
-            {gallery.map((img, i) => (
-              <button
-                key={i}
-                onClick={() => setLightbox(img)}
-                className="group relative aspect-[4/3] overflow-hidden rounded-xl"
-              >
-                <img
-                  src={img}
-                  alt={`Gallery image ${i + 1}`}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Video */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <SectionHeading eyebrow="Watch" title="Inside our process" />
-          <div className="mt-10 max-w-4xl mx-auto aspect-video rounded-2xl bg-[hsl(30_30%_15%)] grid place-items-center relative overflow-hidden shadow-[var(--shadow-soft)]">
-            <img src={aboutLab} alt="" className="absolute inset-0 w-full h-full object-cover opacity-50" />
-            <button className="relative h-16 w-16 grid place-items-center rounded-full bg-accent text-accent-foreground shadow-lg hover:scale-110 transition-transform">
-              <Play className="h-7 w-7 ml-1" />
-            </button>
-          </div>
+          <Tabs defaultValue="images" className="mt-10">
+            <TabsList className="mx-auto mb-8 flex w-fit gap-1 bg-background/80 p-1 shadow-sm">
+              <TabsTrigger
+                value="images"
+                className="inline-flex items-center gap-2 rounded-md px-5 py-2 text-sm font-semibold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+              >
+                <ImageIcon className="h-4 w-4" />
+                Images
+              </TabsTrigger>
+              <TabsTrigger
+                value="videos"
+                className="inline-flex items-center gap-2 rounded-md px-5 py-2 text-sm font-semibold data-[state=active]:bg-accent data-[state=active]:text-accent-foreground"
+              >
+                <VideoIcon className="h-4 w-4" />
+                Videos
+              </TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="images" className="mt-0">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+                {gallery.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setLightbox(img)}
+                    className="group relative aspect-[4/3] overflow-hidden rounded-xl"
+                  >
+                    <img
+                      src={img}
+                      alt={`Gallery image ${i + 1}`}
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </button>
+                ))}
+              </div>
+            </TabsContent>
+
+            <TabsContent value="videos" className="mt-0">
+              <div className="max-w-4xl mx-auto aspect-video rounded-2xl bg-[hsl(30_30%_15%)] grid place-items-center relative overflow-hidden shadow-[var(--shadow-soft)]">
+                <img src={aboutLab} alt="" className="absolute inset-0 w-full h-full object-cover opacity-50" />
+                <button className="relative h-16 w-16 grid place-items-center rounded-full bg-accent text-accent-foreground shadow-lg hover:scale-110 transition-transform">
+                  <Play className="h-7 w-7 ml-1" />
+                </button>
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
