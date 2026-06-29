@@ -25,9 +25,9 @@ export default function Navbar() {
           <img
             src="/elkenno-logo.png"
             alt="Elkenno Life Sciences"
-            className="h-12 w-auto"
-            width={140}
-            height={48}
+            className="h-16 md:h-20 w-auto"
+            width={180}
+            height={72}
           />
         </Link>
 

@@ -6,13 +6,13 @@ export default function Footer() {
     <footer className="bg-[hsl(30_30%_15%)] text-[hsl(40_30%_92%)]">
       <div className="container mx-auto px-4 pt-8 pb-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-1">
-          <div className="bg-cream rounded-xl p-3 inline-block">
+          <div className="bg-cream rounded-xl p-4 inline-block">
             <img
               src="/elkenno-logo.png"
               alt="Elkenno Life Sciences"
-              className="h-14 w-auto"
-              width={160}
-              height={56}
+              className="h-20 md:h-24 w-auto"
+              width={220}
+              height={88}
             />
           </div>
           <p className="mt-4 text-sm leading-relaxed text-[hsl(40_25%_80%)]">
