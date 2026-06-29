@@ -1,40 +1,109 @@
-import { NavLink } from "react-router-dom";
-import { Home, Info, Mail } from "lucide-react";
+import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const links = [
-  { to: "/", label: "Home", icon: Home },
-  { to: "/about", label: "About", icon: Info },
-  { to: "/contact", label: "Contact", icon: Mail },
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/products", label: "Our Products" },
+  { to: "/media", label: "Media" },
+  { to: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="border-b">
-      <nav className="container mx-auto flex items-center justify-between px-4 py-4">
-        <NavLink to="/" className="font-bold text-lg">
-          Vite SPA
-        </NavLink>
-        <ul className="flex gap-2 sm:gap-4">
-          {links.map(({ to, label, icon: Icon }) => (
+    <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/60">
+      <nav className="container mx-auto flex items-center justify-between px-4 py-3">
+        <Link
+          to="/"
+          className="flex items-center gap-2 shrink-0"
+          aria-label="Elkenno Life Sciences home"
+        >
+          <img
+            src="/elkenno-logo.png"
+            alt="Elkenno Life Sciences"
+            className="h-12 w-auto"
+            width={140}
+            height={48}
+          />
+        </Link>
+
+        <ul className="hidden md:flex items-center gap-1">
+          {links.map(({ to, label }) => (
             <li key={to}>
               <NavLink
                 to={to}
                 end={to === "/"}
                 className={({ isActive }) =>
-                  `flex items-center gap-1 px-3 py-2 rounded-md text-sm transition-colors ${
+                  cn(
+                    "px-4 py-2 rounded-md text-sm font-medium transition-colors",
                     isActive
-                      ? "bg-primary text-primary-foreground"
-                      : "hover:bg-accent"
-                  }`
+                      ? "text-primary"
+                      : "text-foreground/80 hover:text-primary hover:bg-primary/5",
+                  )
                 }
               >
-                <Icon className="h-4 w-4" />
-                <span className="hidden sm:inline">{label}</span>
+                {label}
               </NavLink>
             </li>
           ))}
         </ul>
+
+        <div className="hidden md:block">
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent text-accent-foreground font-semibold text-sm shadow-sm hover:shadow-md hover:scale-[1.03] transition-all"
+          >
+            Get a Quote
+          </Link>
+        </div>
+
+        <button
+          onClick={() => setOpen((v) => !v)}
+          className="md:hidden p-2 rounded-md text-foreground hover:bg-primary/10"
+          aria-label="Toggle menu"
+        >
+          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
       </nav>
+
+      {open && (
+        <div className="md:hidden border-t border-border/60 bg-background animate-fade-in">
+          <ul className="container mx-auto px-4 py-3 flex flex-col gap-1">
+            {links.map(({ to, label }) => (
+              <li key={to}>
+                <NavLink
+                  to={to}
+                  end={to === "/"}
+                  onClick={() => setOpen(false)}
+                  className={({ isActive }) =>
+                    cn(
+                      "block px-4 py-3 rounded-md text-base font-medium",
+                      isActive
+                        ? "bg-primary/10 text-primary"
+                        : "text-foreground hover:bg-primary/5",
+                    )
+                  }
+                >
+                  {label}
+                </NavLink>
+              </li>
+            ))}
+            <li>
+              <Link
+                to="/contact"
+                onClick={() => setOpen(false)}
+                className="mt-2 block text-center px-4 py-3 rounded-full bg-accent text-accent-foreground font-semibold"
+              >
+                Get a Quote
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }
