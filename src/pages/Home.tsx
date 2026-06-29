@@ -11,6 +11,7 @@ import { products } from "@/data/products";
 import { Leaf, Sprout, TrendingUp, Recycle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import aboutImg from "@/assets/about-lab.jpg";
+import statsBg from "@/assets/stats-bg.jpg";
 
 const valueProps = [
   { Icon: Leaf, title: "100% Organic", body: "Plant- and mineral-sourced inputs only. No synthetic chemicals — ever." },
