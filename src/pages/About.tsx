@@ -176,6 +176,10 @@ export default function About() {
         </div>
       </section>
 
+      <WhyChooseUs />
+
+      <FAQs />
+
       <CTABanner />
     </>
   );
