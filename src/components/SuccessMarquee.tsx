@@ -1,19 +1,19 @@
 import SectionHeading from "@/components/SectionHeading";
 import successBg from "@/assets/success-bg.jpg";
-import tomatoes from "@/assets/success/3.png";
+import cotton from "@/assets/success/cotton.jpg";
 import paddy from "@/assets/success/2_1.png";
 import mango from "@/assets/success/5.png";
 import chili from "@/assets/success/a-1.png";
-import sprouts from "@/assets/success/2.png";
-import field from "@/assets/success/4.png";
+import rose from "@/assets/success/rose.jpg";
+import tomatoes from "@/assets/success/3.png";
 
 const items = [
   { src: tomatoes, label: "Tomato" },
   { src: paddy, label: "Paddy" },
   { src: mango, label: "Mango" },
   { src: chili, label: "Chili" },
-  { src: sprouts, label: "Sprouts" },
-  { src: field, label: "Field Crops" },
+  { src: cotton, label: "Cotton" },
+  { src: rose, label: "Rose" },
 ];
 
 export default function SuccessMarquee() {
