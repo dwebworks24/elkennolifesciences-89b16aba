@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md border-b border-border/60">
-      <nav className="container mx-auto flex items-center justify-between px-4 py-3">
+      <nav className="container mx-auto flex items-center justify-between px-4 py-2">
         <Link
           to="/"
           className="flex items-center gap-2 shrink-0"
