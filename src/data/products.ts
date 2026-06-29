@@ -3,10 +3,10 @@ const bestSoil = "/best-soil.png";
 const kennoGrow = "/kenno-grow.png";
 const calkenno = "/calkenno.png";
 const flowerPlus = "/flower-plus.png";
-import protectBv from "@/assets/product-protect-bv.jpg";
-import powerK from "@/assets/product-power-k.jpg";
-import quantumPower from "@/assets/product-quantum-power.jpg";
-import nutriBoost from "@/assets/product-nutri-boost.jpg";
+import protectBv from "@/assets/kennoscore.png.asset.json";
+import powerK from "@/assets/power-k.png.asset.json";
+import quantumPower from "@/assets/quantum-power.png.asset.json";
+import nutriBoost from "@/assets/nutri-boost.png.asset.json";
 
 export type ProductCategory =
   | "Granular Fertilizers"
@@ -100,7 +100,7 @@ export const products: Product[] = [
     name: "Protect-BV",
     category: "Plant Protection",
     tag: "Bio-Pesticide",
-    image: protectBv,
+    image: protectBv.url,
     short:
       "Eco-friendly bio-pesticide that protects crops from pests and diseases while being safe for plants and the environment.",
     details:
@@ -132,7 +132,7 @@ export const products: Product[] = [
     name: "Power-K",
     category: "Potassium Fertilizers",
     tag: "Potassium Rich",
-    image: powerK,
+    image: powerK.url,
     short:
       "Potassium-rich liquid fertilizer for improved flowering, fruiting, stress tolerance, and overall plant health.",
     details:
@@ -148,7 +148,7 @@ export const products: Product[] = [
     name: "Quantum Power",
     category: "Micronutrient Fertilizers",
     tag: "Micronutrient Mix",
-    image: quantumPower,
+    image: quantumPower.url,
     short:
       "Complete micronutrient fertilizer that corrects nutrient deficiencies and promotes balanced, high-quality crop growth.",
     details:
@@ -164,7 +164,7 @@ export const products: Product[] = [
     name: "Nutri Boost",
     category: "Growth Promoters",
     tag: "Nutrient Booster",
-    image: nutriBoost,
+    image: nutriBoost.url,
     short:
       "Organic nutrient booster that enhances absorption, stimulates growth, and increases natural yield potential.",
     details:
