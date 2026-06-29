@@ -135,9 +135,9 @@ export default function Contact() {
               <h3 className="font-display text-xl font-bold">Get in touch</h3>
               <ul className="mt-4 space-y-4 text-sm">
                 {[
-                  { Icon: MapPin, label: "Industrial Area, Hyderabad, Telangana 500032, India" },
-                  { Icon: Phone, label: "+91 98765 43210" },
-                  { Icon: Mail, label: "hello@elkenno.in" },
+                  { Icon: MapPin, label: "# 14-20-677/45/A, New Vivekanada Nagar, Borabanda, Hyderabad-500018" },
+                  { Icon: Phone, label: "+91 90003 18873" },
+                  { Icon: Mail, label: "elkennolifesciences@gmail.com" },
                   { Icon: Clock, label: "Mon–Sat, 9:00 AM – 6:00 PM IST" },
                 ].map(({ Icon, label }) => (
                   <li key={label} className="flex gap-3">
