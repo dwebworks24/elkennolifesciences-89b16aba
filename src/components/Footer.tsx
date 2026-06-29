@@ -97,10 +97,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 py-5 text-center text-xs text-[hsl(40_20%_70%)]">
+      <div className="relative border-t border-white/10">
+        <div className="container mx-auto px-4 py-5 text-center text-sm text-white">
           © {new Date().getFullYear()} Elkenno Life Sciences Pvt. Ltd. All rights
-          reserved.
+          reserved. Designed by <a href="https://dwebworks.com" target="_blank" rel="noopener noreferrer" className="font-semibold hover:text-accent transition-colors">dwebworks.com</a>
         </div>
       </div>
     </footer>
