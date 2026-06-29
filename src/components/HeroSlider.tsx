@@ -3,19 +3,16 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroField from "@/assets/hero-field.jpg";
+import heroMain from "@/assets/hero-1-main.png.asset.json";
 import heroSoil from "@/assets/hero-soil.jpg";
 import heroSprouts from "@/assets/hero-sprouts.png.asset.json";
 import heroLabPlants from "@/assets/hero-lab-plants.png.asset.json";
 
 const slides = [
   {
-    image: heroField,
-    eyebrow: "Sustainable Agriculture",
-    title: "Nourishing Soil. Empowering Farmers.",
-    subtitle:
-      "Premium organic fertilizers crafted for the rhythms of Indian farming.",
-    cta: { label: "Explore Products", to: "/products" },
+    image: heroMain.url,
+    noOverlay: true,
+    title: "Elkenno product lineup",
   },
   {
     image: heroSoil,
@@ -73,30 +70,36 @@ export default function HeroSlider() {
                   height={1024}
                   loading={i === 0 ? "eager" : "lazy"}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(30_30%_8%)]/85 via-[hsl(30_30%_8%)]/35 to-transparent" />
-                <div className="absolute inset-0 flex items-end sm:items-center">
-                  <div className="container mx-auto px-4 pb-16 sm:pb-0 md:pl-8 lg:pl-14">
-                    <div className="max-w-2xl text-[hsl(40_30%_96%)]">
-                      <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
-                        {s.eyebrow}
-                      </p>
-                      <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance">
-                        {s.title}
-                      </h1>
-                      <p className="mt-4 text-base sm:text-lg text-[hsl(40_25%_88%)] max-w-xl">
-                        {s.subtitle}
-                      </p>
-                      <div className="mt-7">
-                        <Link
-                          to={s.cta.to}
-                          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-semibold shadow-lg hover:scale-[1.03] transition-transform"
-                        >
-                          {s.cta.label}
-                        </Link>
+                {!s.noOverlay && (
+                  <div className="absolute inset-0 bg-gradient-to-t from-[hsl(30_30%_8%)]/85 via-[hsl(30_30%_8%)]/35 to-transparent" />
+                )}
+                {!s.noOverlay && (
+                  <div className="absolute inset-0 flex items-end sm:items-center">
+                    <div className="container mx-auto px-4 pb-16 sm:pb-0 md:pl-8 lg:pl-14">
+                      <div className="max-w-2xl text-[hsl(40_30%_96%)]">
+                        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">
+                          {s.eyebrow}
+                        </p>
+                        <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+                          {s.title}
+                        </h1>
+                        <p className="mt-4 text-base sm:text-lg text-[hsl(40_25%_88%)] max-w-xl">
+                          {s.subtitle}
+                        </p>
+                        {s.cta && (
+                          <div className="mt-7">
+                            <Link
+                              to={s.cta.to}
+                              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-semibold shadow-lg hover:scale-[1.03] transition-transform"
+                            >
+                              {s.cta.label}
+                            </Link>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           ))}
