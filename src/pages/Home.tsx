@@ -140,22 +140,8 @@ export default function Home() {
             eyebrow="Farmer Voices"
             title="Trusted by farmers across India"
           />
-          <div className="mt-12 grid md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <figure
-                key={t.name}
-                className="bg-card rounded-2xl p-6 border border-border/60 shadow-[var(--shadow-card)] flex flex-col"
-              >
-                <Quote className="h-7 w-7 text-accent" />
-                <blockquote className="mt-3 text-base text-foreground/90 leading-relaxed flex-1">
-                  "{t.quote}"
-                </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-border/60">
-                  <div className="font-display font-semibold text-foreground">{t.name}</div>
-                  <div className="text-sm text-muted-foreground">{t.role}</div>
-                </figcaption>
-              </figure>
-            ))}
+          <div className="mt-12">
+            <TestimonialsSlider />
           </div>
         </div>
       </section>
