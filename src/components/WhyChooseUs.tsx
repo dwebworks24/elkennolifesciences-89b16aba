@@ -1,6 +1,6 @@
 import SectionHeading from "@/components/SectionHeading";
 import { Sprout, Leaf } from "lucide-react";
-import whyImg from "@/assets/why-choose-us.jpg";
+import whyImg from "@/assets/whychoose.png.asset.json";
 
 export default function WhyChooseUs() {
   return (
