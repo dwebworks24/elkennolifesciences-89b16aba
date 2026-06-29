@@ -1,6 +1,6 @@
 import SectionHeading from "@/components/SectionHeading";
 import { Sprout, Leaf } from "lucide-react";
-import whyImg from "@/assets/why-choose-us.jpg";
+import whyImg from "@/assets/whychoose.png.asset.json";
 
 export default function WhyChooseUs() {
   return (
@@ -10,8 +10,8 @@ export default function WhyChooseUs() {
           <div className="absolute -top-4 -left-4 h-24 w-24 rounded-2xl bg-primary/15 -z-10" />
           <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-2xl bg-accent/25 -z-10" />
           <img
-            src={whyImg}
-            alt="Farmer holding organic granular fertilizer above healthy crop"
+            src={whyImg.url}
+            alt="Why Choose Elkenno product lineup and benefits"
             loading="lazy"
             width={1024}
             height={1024}
