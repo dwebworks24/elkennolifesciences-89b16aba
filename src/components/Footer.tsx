@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Twitter, MapPin, Phone, Mail } from "lucide-react";
+import footerBg from "@/assets/footer-bg.jpg";
 
 export default function Footer() {
   return (
-    <footer className="bg-[hsl(30_30%_15%)] text-[hsl(40_30%_92%)]">
-      <div className="container mx-auto px-4 pt-8 pb-14 grid gap-10 md:grid-cols-4">
+    <footer className="relative bg-[hsl(30_30%_15%)] text-[hsl(40_30%_92%)] overflow-hidden">
+      <img
+        src={footerBg}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover opacity-40"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[hsl(30_30%_10%)]/95 via-[hsl(30_30%_12%)]/85 to-[hsl(30_30%_15%)]/80" />
+      <div className="relative container mx-auto px-4 pt-8 pb-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-1">
           <div className="bg-cream rounded-xl p-4 inline-block">
             <img
