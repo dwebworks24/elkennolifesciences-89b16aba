@@ -4,7 +4,7 @@ import PageBanner from "@/components/PageBanner";
 import SectionHeading from "@/components/SectionHeading";
 import ProductCard from "@/components/ProductCard";
 import { products, type Product, type ProductCategory } from "@/data/products";
-import bannerProducts from "@/assets/banner-products.jpg";
+import bannerProducts from "@/assets/subpage-banner.png.asset.json";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check } from "lucide-react";
