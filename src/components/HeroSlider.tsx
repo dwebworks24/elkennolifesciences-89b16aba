@@ -70,7 +70,9 @@ export default function HeroSlider() {
                   height={1024}
                   loading={i === 0 ? "eager" : "lazy"}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(30_30%_8%)]/85 via-[hsl(30_30%_8%)]/35 to-transparent" />
+                {!s.noOverlay && (
+                  <div className="absolute inset-0 bg-gradient-to-t from-[hsl(30_30%_8%)]/85 via-[hsl(30_30%_8%)]/35 to-transparent" />
+                )}
                 {!s.noOverlay && (
                   <div className="absolute inset-0 flex items-end sm:items-center">
                     <div className="container mx-auto px-4 pb-16 sm:pb-0 md:pl-8 lg:pl-14">
