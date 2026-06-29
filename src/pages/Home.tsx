@@ -180,6 +180,10 @@ export default function Home() {
         </div>
       </section>
 
+      <WhyChooseUs />
+
+      <FAQs />
+
       <CTABanner />
     </>
   );
