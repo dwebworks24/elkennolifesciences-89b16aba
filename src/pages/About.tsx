@@ -6,7 +6,18 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
 import bannerAbout from "@/assets/banner-about.jpg";
 import aboutLab from "@/assets/about-lab.jpg";
-import { Target, Eye, Sprout, FlaskConical, ShieldCheck, Package, Truck, Leaf, Award } from "lucide-react";
+import { Target, Eye, Sprout, FlaskConical, ShieldCheck, Package, Truck, Leaf } from "lucide-react";
+import certIso14001 from "@/assets/certs/iso-14001.png";
+import certWhoGmp from "@/assets/certs/who-gmp.png";
+import certIso from "@/assets/certs/iso-certified.png";
+import certOrganic from "@/assets/certs/organic.png";
+
+const certifications = [
+  { src: certIso14001, alt: "ISO 14001:2015" },
+  { src: certWhoGmp, alt: "WHO GMP" },
+  { src: certIso, alt: "ISO 14001:2015 Certified Company" },
+  { src: certOrganic, alt: "100% Organic" },
+];
 
 const process = [
   { Icon: Sprout, title: "Sourcing", body: "Organic raw materials from trusted Indian suppliers." },
