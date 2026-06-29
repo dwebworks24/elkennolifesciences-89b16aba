@@ -126,7 +126,7 @@ export default function Home() {
             subtitle="From liquid foliar sprays to granular soil amendments — tuned to every crop."
           />
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.slice(0, 6).map((p) => (
+            {products.map((p) => (
               <ProductCard key={p.id} product={p} />
             ))}
           </div>
