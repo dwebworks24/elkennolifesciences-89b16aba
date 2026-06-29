@@ -12,7 +12,12 @@ import { cn } from "@/lib/utils";
 
 const tabs: Array<"All" | ProductCategory> = [
   "All",
+  "Plant Protection",
+  "Growth Promoters",
   "Liquid Fertilizers",
+  "Flowering Boosters",
+  "Micronutrient Fertilizers",
+  "Potassium Fertilizers",
   "Granular Fertilizers",
   "Soil Conditioners",
   "Crop-Specific",
@@ -91,7 +96,7 @@ export default function Products() {
                 <img
                   src={selected.image}
                   alt={selected.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-4"
                 />
               </div>
               <DialogHeader>
