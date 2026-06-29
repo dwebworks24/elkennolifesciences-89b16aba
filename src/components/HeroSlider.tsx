@@ -8,11 +8,21 @@ import heroSoil from "@/assets/hero-soil.jpg";
 import heroSprouts from "@/assets/hero-sprouts.png.asset.json";
 import heroLabPlants from "@/assets/hero-lab-plants.png.asset.json";
 
+import heroFarmerField from "@/assets/hero-farmer-field.jpg";
+
 const slides = [
   {
     image: heroMain.url,
     noOverlay: true,
     title: "Elkenno product lineup",
+  },
+  {
+    image: heroFarmerField,
+    eyebrow: "Farmer First",
+    title: "Nourishing Soil. Empowering Farmers.",
+    subtitle:
+      "Sustainable organic fertilizers that help Indian farmers grow healthier, more abundant harvests.",
+    cta: { label: "Explore Products", to: "/products" },
   },
   {
     image: heroSoil,
