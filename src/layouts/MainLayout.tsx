@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export default function MainLayout() {
   const { pathname } = useLocation();
@@ -16,6 +17,7 @@ export default function MainLayout() {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
