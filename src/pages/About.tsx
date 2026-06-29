@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
 import bannerAbout from "@/assets/banner-about.jpg";
 import aboutLab from "@/assets/about-lab.jpg";
+import missionVisionBg from "@/assets/mission-vision-bg.jpg";
 import { Target, Eye, Sprout, FlaskConical, ShieldCheck, Package, Truck, Leaf } from "lucide-react";
 import certIso14001 from "@/assets/certs/iso-14001.png";
 import certWhoGmp from "@/assets/certs/who-gmp.png";
