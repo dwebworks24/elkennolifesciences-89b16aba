@@ -10,12 +10,9 @@ import heroLabPlants from "@/assets/hero-lab-plants.png.asset.json";
 
 const slides = [
   {
-    image: heroField,
-    eyebrow: "Sustainable Agriculture",
-    title: "Nourishing Soil. Empowering Farmers.",
-    subtitle:
-      "Premium organic fertilizers crafted for the rhythms of Indian farming.",
-    cta: { label: "Explore Products", to: "/products" },
+    image: heroMain.url,
+    noOverlay: true,
+    title: "Elkenno product lineup",
   },
   {
     image: heroSoil,
