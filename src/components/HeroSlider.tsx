@@ -4,8 +4,11 @@ import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroField from "@/assets/hero-field.jpg";
+import heroVegetable from "@/assets/hero-vegetable-crop.jpg";
 import heroFarmer from "@/assets/hero-farmer.jpg";
 import heroSoil from "@/assets/hero-soil.jpg";
+import heroSprouts from "@/assets/hero-sprouts.png.asset.json";
+import heroLabPlants from "@/assets/hero-lab-plants.png.asset.json";
 
 const slides = [
   {
@@ -17,11 +20,11 @@ const slides = [
     cta: { label: "Explore Products", to: "/products" },
   },
   {
-    image: heroFarmer,
+    image: heroVegetable,
     eyebrow: "For Every Crop",
     title: "Sustainable Organic Fertilizers for Every Crop",
     subtitle:
-      "From paddy to cotton, our liquid and granular range is tuned to your soil.",
+      "From paddy and cotton to vegetable farms across India — tuned to every soil.",
     cta: { label: "Learn More", to: "/about" },
   },
   {
@@ -31,6 +34,22 @@ const slides = [
     subtitle:
       "Advanced organic formulations that build long-term soil health.",
     cta: { label: "Get a Quote", to: "/contact" },
+  },
+  {
+    image: heroSprouts.url,
+    eyebrow: "From Seed to Harvest",
+    title: "Helping Every Seed Reach Its Full Potential",
+    subtitle:
+      "Organic nutrition that nurtures crops at every stage of growth.",
+    cta: { label: "Explore Products", to: "/products" },
+  },
+  {
+    image: heroLabPlants.url,
+    eyebrow: "Agri-Science",
+    title: "Research-Driven Organic Innovation",
+    subtitle:
+      "Lab-tested bio-formulations engineered for Indian soils and crops.",
+    cta: { label: "Learn More", to: "/about" },
   },
 ];
 
