@@ -2,6 +2,8 @@ import SEO from "@/components/SEO";
 import PageBanner from "@/components/PageBanner";
 import SectionHeading from "@/components/SectionHeading";
 import CTABanner from "@/components/CTABanner";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import FAQs from "@/components/FAQs";
 import heroField from "@/assets/hero-field.jpg";
 import aboutLab from "@/assets/about-lab.jpg";
 import { Target, Eye, Sprout, FlaskConical, ShieldCheck, Package, Truck, Leaf, Award } from "lucide-react";
