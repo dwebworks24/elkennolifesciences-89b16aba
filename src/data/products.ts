@@ -36,7 +36,7 @@ export const products: Product[] = [
     name: "Rudhra",
     category: "Plant Protection",
     tag: "Bio-Pesticide",
-    image: rudhra.url,
+    image: rudhra,
     short:
       "Natural plant protector that guards crops against pests and diseases while keeping soil and produce residue-free.",
     details:
