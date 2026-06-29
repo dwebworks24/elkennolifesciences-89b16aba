@@ -6,7 +6,18 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
 import bannerAbout from "@/assets/banner-about.jpg";
 import aboutLab from "@/assets/about-lab.jpg";
-import { Target, Eye, Sprout, FlaskConical, ShieldCheck, Package, Truck, Leaf, Award } from "lucide-react";
+import { Target, Eye, Sprout, FlaskConical, ShieldCheck, Package, Truck, Leaf } from "lucide-react";
+import certIso14001 from "@/assets/certs/iso-14001.png";
+import certWhoGmp from "@/assets/certs/who-gmp.png";
+import certIso from "@/assets/certs/iso-certified.png";
+import certOrganic from "@/assets/certs/organic.png";
+
+const certifications = [
+  { src: certIso14001, alt: "ISO 14001:2015" },
+  { src: certWhoGmp, alt: "WHO GMP" },
+  { src: certIso, alt: "ISO 14001:2015 Certified Company" },
+  { src: certOrganic, alt: "100% Organic" },
+];
 
 const process = [
   { Icon: Sprout, title: "Sourcing", body: "Organic raw materials from trusted Indian suppliers." },
@@ -162,15 +173,15 @@ export default function About() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <SectionHeading eyebrow="Quality & Trust" title="Certified, tested, trusted" />
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-            {["Organic Certified", "ISO 9001", "FCO Approved", "Eco-Friendly", "Made in India"].map((c) => (
-              <div
-                key={c}
-                className="flex items-center gap-2 px-5 py-3 rounded-full bg-cream border border-accent/30"
-              >
-                <Award className="h-5 w-5 text-[hsl(35_85%_30%)]" />
-                <span className="font-display font-semibold text-sm text-[hsl(30_30%_25%)]">{c}</span>
-              </div>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+            {certifications.map((c) => (
+              <img
+                key={c.alt}
+                src={c.src}
+                alt={c.alt}
+                loading="lazy"
+                className="h-20 sm:h-24 w-auto object-contain transition-transform hover:scale-105"
+              />
             ))}
           </div>
         </div>
