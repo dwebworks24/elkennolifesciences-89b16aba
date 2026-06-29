@@ -6,8 +6,9 @@ import StatCounter from "@/components/StatCounter";
 import CTABanner from "@/components/CTABanner";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
+import TestimonialsSlider from "@/components/TestimonialsSlider";
 import { products } from "@/data/products";
-import { Leaf, Sprout, TrendingUp, Recycle, ArrowRight, Quote } from "lucide-react";
+import { Leaf, Sprout, TrendingUp, Recycle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import aboutImg from "@/assets/about-lab.jpg";
 
@@ -16,27 +17,6 @@ const valueProps = [
   { Icon: Sprout, title: "Soil Health First", body: "Formulations that feed soil microbes, not just the crop." },
   { Icon: TrendingUp, title: "Higher Crop Yield", body: "Field-proven blends that improve yield and produce quality." },
   { Icon: Recycle, title: "Eco-Friendly Manufacturing", body: "Low-impact processes that respect water, soil and air." },
-];
-
-const testimonials = [
-  {
-    name: "Ramesh Patil",
-    role: "Cotton farmer, Maharashtra",
-    quote:
-      "Our cotton yield rose noticeably after switching to Elkenno granular blend. The soil even feels softer now.",
-  },
-  {
-    name: "Sunita Devi",
-    role: "Paddy farmer, Haryana",
-    quote:
-      "The liquid foliar spray is so easy to use. Healthier leaves, better grains — and no chemical residue.",
-  },
-  {
-    name: "Mahesh Reddy",
-    role: "Sugarcane farmer, Telangana",
-    quote:
-      "Their agri-experts walked us through which product to use at which stage. Truly a partner, not a vendor.",
-  },
 ];
 
 export default function Home() {
@@ -160,22 +140,8 @@ export default function Home() {
             eyebrow="Farmer Voices"
             title="Trusted by farmers across India"
           />
-          <div className="mt-12 grid md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <figure
-                key={t.name}
-                className="bg-card rounded-2xl p-6 border border-border/60 shadow-[var(--shadow-card)] flex flex-col"
-              >
-                <Quote className="h-7 w-7 text-accent" />
-                <blockquote className="mt-3 text-base text-foreground/90 leading-relaxed flex-1">
-                  "{t.quote}"
-                </blockquote>
-                <figcaption className="mt-5 pt-4 border-t border-border/60">
-                  <div className="font-display font-semibold text-foreground">{t.name}</div>
-                  <div className="text-sm text-muted-foreground">{t.role}</div>
-                </figcaption>
-              </figure>
-            ))}
+          <div className="mt-12">
+            <TestimonialsSlider />
           </div>
         </div>
       </section>
