@@ -100,7 +100,7 @@ export const products: Product[] = [
     name: "Protect-BV",
     category: "Plant Protection",
     tag: "Bio-Pesticide",
-    image: protectBv,
+    image: protectBv.url,
     short:
       "Eco-friendly bio-pesticide that protects crops from pests and diseases while being safe for plants and the environment.",
     details:
@@ -132,7 +132,7 @@ export const products: Product[] = [
     name: "Power-K",
     category: "Potassium Fertilizers",
     tag: "Potassium Rich",
-    image: powerK,
+    image: powerK.url,
     short:
       "Potassium-rich liquid fertilizer for improved flowering, fruiting, stress tolerance, and overall plant health.",
     details:
@@ -148,7 +148,7 @@ export const products: Product[] = [
     name: "Quantum Power",
     category: "Micronutrient Fertilizers",
     tag: "Micronutrient Mix",
-    image: quantumPower,
+    image: quantumPower.url,
     short:
       "Complete micronutrient fertilizer that corrects nutrient deficiencies and promotes balanced, high-quality crop growth.",
     details:
@@ -164,7 +164,7 @@ export const products: Product[] = [
     name: "Nutri Boost",
     category: "Growth Promoters",
     tag: "Nutrient Booster",
-    image: nutriBoost,
+    image: nutriBoost.url,
     short:
       "Organic nutrient booster that enhances absorption, stimulates growth, and increases natural yield potential.",
     details:
