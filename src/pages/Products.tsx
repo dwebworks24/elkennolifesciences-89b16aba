@@ -12,7 +12,12 @@ import { cn } from "@/lib/utils";
 
 const tabs: Array<"All" | ProductCategory> = [
   "All",
+  "Plant Protection",
+  "Growth Promoters",
   "Liquid Fertilizers",
+  "Flowering Boosters",
+  "Micronutrient Fertilizers",
+  "Potassium Fertilizers",
   "Granular Fertilizers",
   "Soil Conditioners",
   "Crop-Specific",
