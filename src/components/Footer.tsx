@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Twitter, MapPin, Phone, Mail } from "lucide-react";
+import footerBg from "@/assets/footer-bg.jpg";
 
 export default function Footer() {
   return (
