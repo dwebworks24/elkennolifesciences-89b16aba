@@ -80,7 +80,7 @@ export default function About() {
           loading="lazy"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-cream/80" />
+        <div className="absolute inset-0 bg-cream/60" />
         <div className="relative container mx-auto px-4 grid md:grid-cols-2 gap-6">
           {[
             {
