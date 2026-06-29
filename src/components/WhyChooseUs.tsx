@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
           <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-2xl bg-accent/25 -z-10" />
           <img
             src={whyImg.url}
-            alt="Farmer holding organic granular fertilizer above healthy crop"
+            alt="Why Choose Elkenno product lineup and benefits"
             loading="lazy"
             width={1024}
             height={1024}
