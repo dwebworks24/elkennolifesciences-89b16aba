@@ -6,8 +6,9 @@ import StatCounter from "@/components/StatCounter";
 import CTABanner from "@/components/CTABanner";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
+import TestimonialsSlider from "@/components/TestimonialsSlider";
 import { products } from "@/data/products";
-import { Leaf, Sprout, TrendingUp, Recycle, ArrowRight, Quote } from "lucide-react";
+import { Leaf, Sprout, TrendingUp, Recycle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import aboutImg from "@/assets/about-lab.jpg";
 
