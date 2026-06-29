@@ -52,15 +52,15 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-[hsl(40_25%_80%)]">
             <li className="flex gap-2">
               <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
-              <span>Industrial Area, Hyderabad, Telangana, India</span>
+              <span># 14-20-677/45/A, New Vivekanada Nagar, Borabanda, Hyderabad-500018</span>
             </li>
             <li className="flex gap-2">
               <Phone className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
-              <span>+91 98765 43210</span>
+              <span>+91 90003 18873</span>
             </li>
             <li className="flex gap-2">
               <Mail className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
-              <span>hello@elkenno.in</span>
+              <span>elkennolifesciences@gmail.com</span>
             </li>
           </ul>
         </div>
