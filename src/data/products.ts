@@ -3,7 +3,7 @@ const bestSoil = "/best-soil.png";
 const kennoGrow = "/kenno-grow.png";
 const calkenno = "/calkenno.png";
 const flowerPlus = "/flower-plus.png";
-import kennoScore from "@/assets/kennoscore.png.asset.json";
+import protectBv from "@/assets/kennoscore.png.asset.json";
 import powerK from "@/assets/power-k.png.asset.json";
 import quantumPower from "@/assets/quantum-power.png.asset.json";
 import nutriBoost from "@/assets/nutri-boost.png.asset.json";
