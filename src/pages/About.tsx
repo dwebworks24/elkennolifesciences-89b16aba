@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
 import bannerAbout from "@/assets/banner-about.jpg";
 import aboutLab from "@/assets/about-lab.jpg";
+import missionVisionBg from "@/assets/mission-vision-bg.jpg";
 import { Target, Eye, Sprout, FlaskConical, ShieldCheck, Package, Truck, Leaf } from "lucide-react";
 import certIso14001 from "@/assets/certs/iso-14001.png";
 import certWhoGmp from "@/assets/certs/who-gmp.png";
@@ -72,8 +73,15 @@ export default function About() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 bg-cream/70 leaf-pattern">
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-6">
+      <section className="relative py-16 overflow-hidden">
+        <img
+          src={missionVisionBg}
+          alt="Lush green Indian farmland at sunrise"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-cream/80" />
+        <div className="relative container mx-auto px-4 grid md:grid-cols-2 gap-6">
           {[
             {
               Icon: Target,
@@ -88,7 +96,7 @@ export default function About() {
           ].map(({ Icon, title, body }) => (
             <div
               key={title}
-              className="bg-card rounded-2xl p-8 border border-border/60 shadow-[var(--shadow-card)]"
+              className="bg-card/95 backdrop-blur-sm rounded-2xl p-8 border border-border/60 shadow-[var(--shadow-card)]"
             >
               <div className="h-12 w-12 grid place-items-center rounded-xl bg-accent/20 text-[hsl(35_85%_30%)]">
                 <Icon className="h-6 w-6" />
