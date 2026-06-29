@@ -96,7 +96,7 @@ export default function Products() {
                 <img
                   src={selected.image}
                   alt={selected.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-4"
                 />
               </div>
               <DialogHeader>
