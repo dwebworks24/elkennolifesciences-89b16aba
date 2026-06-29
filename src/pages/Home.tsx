@@ -161,9 +161,9 @@ export default function Home() {
 
       <FAQs />
 
-      <SuccessMarquee />
-
       <CTABanner />
+
+      <SuccessMarquee />
     </>
   );
 }
