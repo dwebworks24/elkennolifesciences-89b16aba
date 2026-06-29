@@ -1,15 +1,23 @@
-import granular from "@/assets/product-granular.jpg";
-import liquid from "@/assets/product-liquid.jpg";
-import vermicompost from "@/assets/product-vermicompost.jpg";
-import seaweed from "@/assets/product-seaweed.jpg";
-import crop from "@/assets/product-crop.jpg";
-import bionpk from "@/assets/product-bionpk.jpg";
+import rudhra from "@/assets/rudhra.png.asset.json";
+import bestSoil from "@/assets/product-best-soil.jpg";
+import kennoGrow from "@/assets/product-kenno-grow.jpg";
+import calkenno from "@/assets/product-calkenno.jpg";
+import protectBv from "@/assets/product-protect-bv.jpg";
+import flowerPlus from "@/assets/product-flower-plus.jpg";
+import powerK from "@/assets/product-power-k.jpg";
+import quantumPower from "@/assets/product-quantum-power.jpg";
+import nutriBoost from "@/assets/product-nutri-boost.jpg";
 
 export type ProductCategory =
   | "Granular Fertilizers"
   | "Liquid Fertilizers"
   | "Soil Conditioners"
-  | "Crop-Specific";
+  | "Crop-Specific"
+  | "Plant Protection"
+  | "Growth Promoters"
+  | "Flowering Boosters"
+  | "Micronutrient Fertilizers"
+  | "Potassium Fertilizers";
 
 export interface Product {
   id: string;
@@ -24,99 +32,147 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: "granular-npk",
-    name: "Organic Granular NPK Fertilizer",
-    category: "Granular Fertilizers",
-    tag: "Granular",
-    image: granular,
+    id: "rudhra",
+    name: "Rudhra",
+    category: "Plant Protection",
+    tag: "Bio-Pesticide",
+    image: rudhra.url,
     short:
-      "Slow-release, balanced NPK granules to feed soil microbes and crops throughout the season.",
+      "Natural plant protector that guards crops against pests and diseases while keeping soil and produce residue-free.",
     details:
-      "A complete granular NPK blend derived from plant and mineral sources. Releases nutrients gradually to support steady crop growth while improving soil structure.",
+      "Rudhra is a bio-based plant protector formulated with botanical extracts and beneficial microorganisms. It helps control common pests and fungal issues without harming beneficial insects or leaving harmful residues.",
     benefits: [
-      "Balanced N-P-K nutrition",
-      "Improves soil aggregation",
-      "Slow-release for season-long feeding",
+      "Natural pest and disease defense",
+      "Safe for beneficial insects",
+      "Residue-free produce",
     ],
   },
   {
-    id: "liquid-bio",
-    name: "Liquid Bio-Fertilizer (Foliar Spray)",
+    id: "best-soil",
+    name: "Best Soil",
     category: "Liquid Fertilizers",
-    tag: "Liquid",
-    image: liquid,
+    tag: "Foliar Spray",
+    image: bestSoil,
     short:
-      "Ready-to-spray foliar formulation with beneficial microbes and plant-based nutrients.",
+      "Seaweed-enriched organic liquid bio-fertilizer that improves soil health and supports vigorous plant growth.",
     details:
-      "Designed for rapid leaf absorption. Boosts chlorophyll, flowering and overall vigor when applied as a foliar spray during key growth stages.",
+      "Best Soil is a foliar-ready liquid bio-fertilizer enriched with seaweed extract and natural plant nutrients. It enhances nutrient uptake, improves soil biology, and promotes healthier, more productive crops.",
     benefits: [
-      "Fast nutrient uptake via leaves",
-      "Boosts flowering & fruiting",
-      "Compatible with most crops",
+      "Boosts soil microbial activity",
+      "Enhances plant growth naturally",
+      "Improves crop yield potential",
     ],
   },
   {
-    id: "vermicompost",
-    name: "Vermicompost Soil Conditioner",
-    category: "Soil Conditioners",
-    tag: "Granular",
-    image: vermicompost,
+    id: "kenno-grow",
+    name: "Kenno Grow",
+    category: "Growth Promoters",
+    tag: "Plant Growth Promoter",
+    image: kennoGrow,
     short:
-      "Earthworm-processed organic matter that restores soil biology and water-holding capacity.",
+      "Organic growth promoter designed to stimulate root development, vigorous vegetative growth, and higher yields.",
     details:
-      "Premium-grade vermicompost rich in humus, beneficial microbes and slow-release nutrients. Ideal for soil rebuilding and organic conversion.",
+      "Kenno Grow is an organic plant growth promoter that supports strong root establishment and vigorous vegetative growth. Ideal for use during early and mid-growth stages across a wide range of crops.",
     benefits: [
-      "Restores soil microbial life",
-      "Improves moisture retention",
-      "Reduces dependence on chemicals",
+      "Stimulates root development",
+      "Encourages vigorous growth",
+      "Supports higher yields",
     ],
   },
   {
-    id: "seaweed",
-    name: "Seaweed Liquid Growth Promoter",
+    id: "calkenno",
+    name: "Calkenno",
     category: "Liquid Fertilizers",
-    tag: "Liquid",
-    image: seaweed,
+    tag: "Calcium Rich",
+    image: calkenno,
     short:
-      "Cold-extracted seaweed concentrate packed with natural plant growth regulators.",
+      "Calcium-rich organic liquid fertilizer for stronger cell walls, better fruit quality, and reduced blossom-end rot.",
     details:
-      "A natural biostimulant rich in cytokinins, auxins and trace minerals from Ascophyllum nodosum. Improves stress tolerance and yield quality.",
+      "Calkenno delivers readily available calcium in an organic liquid form. It strengthens plant cell structure, improves fruit firmness and shelf life, and helps prevent calcium-related disorders in vegetables and fruits.",
     benefits: [
-      "Natural growth hormones",
+      "Strengthens plant cell walls",
+      "Improves fruit quality and firmness",
+      "Reduces blossom-end rot risk",
+    ],
+  },
+  {
+    id: "protect-bv",
+    name: "Protect-BV",
+    category: "Plant Protection",
+    tag: "Bio-Pesticide",
+    image: protectBv,
+    short:
+      "Eco-friendly bio-pesticide that protects crops from pests and diseases while being safe for plants and the environment.",
+    details:
+      "Protect-BV is a broad-spectrum organic bio-pesticide that targets common crop pests and pathogens. Its microbial and botanical composition makes it safe for repeated application and compatible with integrated pest management programs.",
+    benefits: [
+      "Controls pests and diseases naturally",
+      "Safe for environment and applicators",
+      "Compatible with IPM practices",
+    ],
+  },
+  {
+    id: "flower-plus",
+    name: "Flower Plus",
+    category: "Flowering Boosters",
+    tag: "Flowering Booster",
+    image: flowerPlus,
+    short:
+      "Organic flowering booster that encourages more blooms, better fruit set, and improved yield quality.",
+    details:
+      "Flower Plus is a natural flowering booster formulated to support reproductive growth in flowering and fruiting crops. It helps increase flower retention, improve fruit set, and enhance overall harvest quality.",
+    benefits: [
+      "Encourages abundant flowering",
+      "Improves fruit set",
+      "Enhances yield quality",
+    ],
+  },
+  {
+    id: "power-k",
+    name: "Power-K",
+    category: "Potassium Fertilizers",
+    tag: "Potassium Rich",
+    image: powerK,
+    short:
+      "Potassium-rich liquid fertilizer for improved flowering, fruiting, stress tolerance, and overall plant health.",
+    details:
+      "Power-K provides a concentrated organic potassium source that supports flowering, fruit development, and plant stress resilience. It is ideal for use during the reproductive and maturity stages of crop growth.",
+    benefits: [
+      "Enhances flowering and fruiting",
       "Improves stress tolerance",
-      "Enhances crop quality",
+      "Strengthens overall plant health",
     ],
   },
   {
-    id: "crop-specific",
-    name: "Crop-Specific Organic Blend",
-    category: "Crop-Specific",
-    tag: "Granular",
-    image: crop,
+    id: "quantum-power",
+    name: "Quantum Power",
+    category: "Micronutrient Fertilizers",
+    tag: "Micronutrient Mix",
+    image: quantumPower,
     short:
-      "Tailored organic blends for paddy, cotton, sugarcane, vegetables and fruit crops.",
+      "Complete micronutrient fertilizer that corrects nutrient deficiencies and promotes balanced, high-quality crop growth.",
     details:
-      "Custom-formulated nutrient profiles for the specific demands of each crop. Available in 5kg, 25kg and 50kg packaging for farms of every size.",
+      "Quantum Power delivers a balanced blend of essential micronutrients in an organic chelated form. It helps correct hidden deficiencies, improves photosynthesis, and supports uniform crop development and quality.",
     benefits: [
-      "Crop-tuned NPK ratios",
-      "Higher yield potential",
-      "Available in multiple pack sizes",
+      "Corrects micronutrient deficiencies",
+      "Supports balanced crop nutrition",
+      "Improves yield and quality",
     ],
   },
   {
-    id: "bio-npk-consortia",
-    name: "Bio NPK Consortia",
-    category: "Liquid Fertilizers",
-    tag: "Microbial",
-    image: bionpk,
+    id: "nutri-boost",
+    name: "Nutri Boost",
+    category: "Growth Promoters",
+    tag: "Nutrient Booster",
+    image: nutriBoost,
     short:
-      "Living consortium of nitrogen-fixing, phosphate- and potash-mobilising microbes.",
+      "Organic nutrient booster that enhances absorption, stimulates growth, and increases natural yield potential.",
     details:
-      "A scientifically developed microbial consortium that fixes atmospheric nitrogen and unlocks soil-bound phosphorus and potassium for the plant.",
+      "Nutri Boost is an organic nutrient booster that improves nutrient absorption and utilization within the plant. It supports vigorous growth, greener foliage, and better yield across cereals, vegetables, fruits, and cash crops.",
     benefits: [
-      "Reduces chemical fertilizer need",
-      "Improves nutrient availability",
-      "Restores soil microbiome",
+      "Enhances nutrient absorption",
+      "Stimulates healthy growth",
+      "Increases yield naturally",
     ],
   },
 ];
