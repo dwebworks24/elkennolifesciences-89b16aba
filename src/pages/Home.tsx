@@ -63,8 +63,8 @@ export default function Home() {
             <div className="absolute -top-4 -left-4 h-24 w-24 rounded-2xl bg-accent/30 -z-10" />
             <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-2xl bg-primary/20 -z-10" />
             <img
-              src={aboutImg}
-              alt="Elkenno research lab"
+              src={aboutImg.url}
+              alt="Elkenno product lineup"
               loading="lazy"
               width={1280}
               height={960}
