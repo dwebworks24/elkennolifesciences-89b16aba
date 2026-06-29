@@ -7,6 +7,7 @@ import CTABanner from "@/components/CTABanner";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQs from "@/components/FAQs";
 import TestimonialsSlider from "@/components/TestimonialsSlider";
+import SuccessMarquee from "@/components/SuccessMarquee";
 import { products } from "@/data/products";
 import { Leaf, Sprout, TrendingUp, Recycle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -159,6 +160,8 @@ export default function Home() {
       <WhyChooseUs />
 
       <FAQs />
+
+      <SuccessMarquee />
 
       <CTABanner />
     </>
