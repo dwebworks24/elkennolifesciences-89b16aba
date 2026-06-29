@@ -1,4 +1,5 @@
 import SectionHeading from "@/components/SectionHeading";
+import successBg from "@/assets/success-bg.jpg";
 import tomatoes from "@/assets/success/3.png";
 import paddy from "@/assets/success/2_1.png";
 import mango from "@/assets/success/5.png";
@@ -18,17 +19,29 @@ const items = [
 export default function SuccessMarquee() {
   const loop = [...items, ...items];
   return (
-    <section className="py-16 sm:py-20 bg-cream/50 leaf-pattern overflow-hidden">
-      <div className="container mx-auto px-4">
+    <section className="relative py-16 sm:py-20 overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={successBg}
+          alt="Indian farmland background"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-white/75" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-4">
         <SectionHeading
           eyebrow="Real Fields. Real Results."
           title="Our Success in Action"
           subtitle="Healthier crops, richer soils, happier farmers — across India."
         />
       </div>
-      <div className="mt-12 relative">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 bg-gradient-to-r from-cream to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-cream to-transparent z-10" />
+      <div className="relative z-10 mt-12">
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 bg-gradient-to-r from-white/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-white/80 to-transparent z-10" />
         <div className="flex gap-6 animate-marquee w-max">
           {loop.map((it, i) => (
             <figure
