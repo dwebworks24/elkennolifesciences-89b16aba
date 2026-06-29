@@ -3,14 +3,22 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroFieldSunrise from "@/assets/hero-field-sunrise.jpg";
 import heroMain from "@/assets/hero-1-main.png.asset.json";
 import heroSoil from "@/assets/hero-soil.jpg";
 import heroSprouts from "@/assets/hero-sprouts.png.asset.json";
 import heroLabPlants from "@/assets/hero-lab-plants.png.asset.json";
-
 import heroFarmerField from "@/assets/hero-farmer-field.jpg";
 
 const slides = [
+  {
+    image: heroFieldSunrise,
+    eyebrow: "Sustainable Agriculture",
+    title: "Nourishing Soil. Empowering Farmers.",
+    subtitle:
+      "Premium organic fertilizers crafted for Indian farms — boosting soil health, crop yield, and a greener tomorrow.",
+    cta: { label: "Explore Products", to: "/products" },
+  },
   {
     image: heroMain.url,
     noOverlay: true,
@@ -19,7 +27,7 @@ const slides = [
   {
     image: heroFarmerField,
     eyebrow: "Farmer First",
-    title: "Nourishing Soil. Empowering Farmers.",
+    title: "Sustainable Organic Fertilizers for Every Crop",
     subtitle:
       "Sustainable organic fertilizers that help Indian farmers grow healthier, more abundant harvests.",
     cta: { label: "Explore Products", to: "/products" },
