@@ -39,17 +39,17 @@ export default function Home() {
             title="Built for soil. Trusted by farmers."
             subtitle="Four commitments that guide every product we manufacture."
           />
-          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {valueProps.map(({ Icon, title, body }) => (
               <div
                 key={title}
-                className="bg-card rounded-2xl p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)] transition-shadow border border-border/60"
+                className="bg-card rounded-2xl p-7 sm:p-6 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)] transition-shadow border border-border/60"
               >
-                <div className="h-12 w-12 grid place-items-center rounded-xl bg-primary/10 text-primary">
-                  <Icon className="h-6 w-6" />
+                <div className="h-14 w-14 sm:h-12 sm:w-12 grid place-items-center rounded-xl bg-primary/10 text-primary">
+                  <Icon className="h-7 w-7 sm:h-6 sm:w-6" />
                 </div>
-                <h3 className="mt-4 font-display font-semibold text-lg">{title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{body}</p>
+                <h3 className="mt-5 sm:mt-4 font-display font-semibold text-xl sm:text-lg">{title}</h3>
+                <p className="mt-2 text-base sm:text-sm text-muted-foreground leading-relaxed">{body}</p>
               </div>
             ))}
           </div>
