@@ -27,9 +27,11 @@ export default function SuccessMarquee() {
           alt="Indian farmland background"
           className="w-full h-full object-cover"
           loading="lazy"
+          width={1920}
+          height={768}
         />
-        <div className="absolute inset-0 bg-white/75" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
+        <div className="absolute inset-0 bg-cream/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-cream/30 via-transparent to-cream/30" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4">
@@ -40,8 +42,8 @@ export default function SuccessMarquee() {
         />
       </div>
       <div className="relative z-10 mt-12">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 bg-gradient-to-r from-white/80 to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-white/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 bg-gradient-to-r from-cream/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 bg-gradient-to-l from-cream/80 to-transparent z-10" />
         <div className="flex gap-6 animate-marquee w-max">
           {loop.map((it, i) => (
             <figure
