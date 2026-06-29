@@ -4,6 +4,8 @@ import SectionHeading from "@/components/SectionHeading";
 import ProductCard from "@/components/ProductCard";
 import StatCounter from "@/components/StatCounter";
 import CTABanner from "@/components/CTABanner";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import FAQs from "@/components/FAQs";
 import { products } from "@/data/products";
 import { Leaf, Sprout, TrendingUp, Recycle, ArrowRight, Quote } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -177,6 +179,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <WhyChooseUs />
+
+      <FAQs />
 
       <CTABanner />
     </>
