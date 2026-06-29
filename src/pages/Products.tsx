@@ -4,7 +4,7 @@ import PageBanner from "@/components/PageBanner";
 import SectionHeading from "@/components/SectionHeading";
 import ProductCard from "@/components/ProductCard";
 import { products, type Product, type ProductCategory } from "@/data/products";
-import heroSoil from "@/assets/hero-soil.jpg";
+import bannerProducts from "@/assets/banner-products.jpg";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check } from "lucide-react";
@@ -42,7 +42,7 @@ export default function Products() {
       <PageBanner
         title="Our Products"
         subtitle="A complete organic nutrition range — tailored to your crop and soil."
-        image={heroSoil}
+        image={bannerProducts}
       />
 
       <section className="py-14">
