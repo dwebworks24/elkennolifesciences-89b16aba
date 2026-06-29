@@ -10,7 +10,7 @@ export default function MainLayout() {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-background text-foreground pt-[72px] md:pt-[88px]">
       <Navbar />
       <main className="flex-1">
         <Outlet />
