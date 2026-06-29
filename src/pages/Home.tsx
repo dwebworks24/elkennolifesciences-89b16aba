@@ -19,27 +19,6 @@ const valueProps = [
   { Icon: Recycle, title: "Eco-Friendly Manufacturing", body: "Low-impact processes that respect water, soil and air." },
 ];
 
-const testimonials = [
-  {
-    name: "Ramesh Patil",
-    role: "Cotton farmer, Maharashtra",
-    quote:
-      "Our cotton yield rose noticeably after switching to Elkenno granular blend. The soil even feels softer now.",
-  },
-  {
-    name: "Sunita Devi",
-    role: "Paddy farmer, Haryana",
-    quote:
-      "The liquid foliar spray is so easy to use. Healthier leaves, better grains — and no chemical residue.",
-  },
-  {
-    name: "Mahesh Reddy",
-    role: "Sugarcane farmer, Telangana",
-    quote:
-      "Their agri-experts walked us through which product to use at which stage. Truly a partner, not a vendor.",
-  },
-];
-
 export default function Home() {
   return (
     <>
