@@ -123,13 +123,22 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="py-16 sm:py-20 bg-cream/70 leaf-pattern">
-        <div className="container mx-auto px-4">
+      <section className="relative py-20 sm:py-28 overflow-hidden">
+        <img
+          src={statsBg}
+          alt="Lush green Indian farmland"
+          loading="lazy"
+          width={1920}
+          height={768}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-leaf-dark/90 via-leaf-dark/80 to-earth/80" />
+        <div className="relative container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <StatCounter end={12000} suffix="+" label="Farmers Served" />
-            <StatCounter end={18} suffix="+" label="States Reached" />
-            <StatCounter end={100} suffix="%" label="Organic Certified" />
-            <StatCounter end={10} suffix="+" label="Years of Practice" />
+            <StatCounter end={12000} suffix="+" label="Farmers Served" light />
+            <StatCounter end={18} suffix="+" label="States Reached" light />
+            <StatCounter end={100} suffix="%" label="Organic Certified" light />
+            <StatCounter end={10} suffix="+" label="Years of Practice" light />
           </div>
         </div>
       </section>
