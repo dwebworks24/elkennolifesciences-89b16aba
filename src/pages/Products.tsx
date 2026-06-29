@@ -42,7 +42,7 @@ export default function Products() {
       <PageBanner
         title="Our Products"
         subtitle="A complete organic nutrition range — tailored to your crop and soil."
-        image={bannerProducts}
+        image={bannerProducts.url}
       />
 
       <section className="py-14">
