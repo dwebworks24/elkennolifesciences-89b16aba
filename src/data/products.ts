@@ -1,4 +1,4 @@
-import rudhra from "@/assets/rudhra.png.asset.json";
+import rudhra from "/rudhra.png";
 import bestSoil from "@/assets/product-best-soil.jpg";
 import kennoGrow from "@/assets/product-kenno-grow.jpg";
 import calkenno from "@/assets/product-calkenno.jpg";
