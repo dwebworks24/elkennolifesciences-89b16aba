@@ -10,7 +10,7 @@ export default function WhyChooseUs() {
           <div className="absolute -top-4 -left-4 h-24 w-24 rounded-2xl bg-primary/15 -z-10" />
           <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-2xl bg-accent/25 -z-10" />
           <img
-            src={whyImg}
+            src={whyImg.url}
             alt="Farmer holding organic granular fertilizer above healthy crop"
             loading="lazy"
             width={1024}
