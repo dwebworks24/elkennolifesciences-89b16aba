@@ -173,15 +173,15 @@ export default function About() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <SectionHeading eyebrow="Quality & Trust" title="Certified, tested, trusted" />
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-6">
-            {["Organic Certified", "ISO 9001", "FCO Approved", "Eco-Friendly", "Made in India"].map((c) => (
-              <div
-                key={c}
-                className="flex items-center gap-2 px-5 py-3 rounded-full bg-cream border border-accent/30"
-              >
-                <Award className="h-5 w-5 text-[hsl(35_85%_30%)]" />
-                <span className="font-display font-semibold text-sm text-[hsl(30_30%_25%)]">{c}</span>
-              </div>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+            {certifications.map((c) => (
+              <img
+                key={c.alt}
+                src={c.src}
+                alt={c.alt}
+                loading="lazy"
+                className="h-20 sm:h-24 w-auto object-contain transition-transform hover:scale-105"
+              />
             ))}
           </div>
         </div>
