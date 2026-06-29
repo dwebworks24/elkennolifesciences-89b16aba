@@ -4,8 +4,6 @@ import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroField from "@/assets/hero-field.jpg";
-import heroVegetable from "@/assets/hero-vegetable-crop.jpg";
-import heroFarmer from "@/assets/hero-farmer.jpg";
 import heroSoil from "@/assets/hero-soil.jpg";
 import heroSprouts from "@/assets/hero-sprouts.png.asset.json";
 import heroLabPlants from "@/assets/hero-lab-plants.png.asset.json";
@@ -18,14 +16,6 @@ const slides = [
     subtitle:
       "Premium organic fertilizers crafted for the rhythms of Indian farming.",
     cta: { label: "Explore Products", to: "/products" },
-  },
-  {
-    image: heroVegetable,
-    eyebrow: "For Every Crop",
-    title: "Sustainable Organic Fertilizers for Every Crop",
-    subtitle:
-      "From paddy and cotton to vegetable farms across India — tuned to every soil.",
-    cta: { label: "Learn More", to: "/about" },
   },
   {
     image: heroSoil,
