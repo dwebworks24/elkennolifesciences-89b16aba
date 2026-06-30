@@ -10,14 +10,14 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
   },
-  server: {
-    host: "::",
-    port: Number(process.env.PORT) || 8080,
-    strictPort: true,
-  },
-  preview: {
-    host: "::",
-    port: Number(process.env.PORT) || 8080,
-    strictPort: true,
-  },
+  // server: {
+  //   host: "::",
+  //   port: Number(process.env.PORT) || 8080,
+  //   strictPort: true,
+  // },
+  // preview: {
+  //   host: "::",
+  //   port: Number(process.env.PORT) || 8080,
+  //   strictPort: true,
+  // },
 });
