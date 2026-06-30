@@ -1,12 +1,22 @@
-const rudhra = "/rudhra.png";
-const bestSoil = "/best-soil.png";
-const kennoGrow = "/kenno-grow.png";
-const calkenno = "/calkenno.png";
-const flowerPlus = "/flower-plus.png";
-const protectBv = "/kennoscore.png";
-const powerK = "/power-k.png";
-const quantumPower = "/quantum-power.png";
-const nutriBoost = "/nutri-boost.png";
+import rudhraImg from "@/assets/products/rudhra.png";
+import bestSoilImg from "@/assets/products/best-soil.png";
+import kennoGrowImg from "@/assets/products/kenno-grow.png";
+import calkennoImg from "@/assets/products/calkenno.png";
+import flowerPlusImg from "@/assets/products/flower-plus.png";
+import protectBvImg from "@/assets/products/kennoscore.png";
+import powerKImg from "@/assets/products/power-k.png";
+import quantumPowerImg from "@/assets/products/quantum-power.png";
+import nutriBoostImg from "@/assets/products/nutri-boost.png";
+
+export const rudhra = rudhraImg;
+export const bestSoil = bestSoilImg;
+export const kennoGrow = kennoGrowImg;
+export const calkenno = calkennoImg;
+export const flowerPlus = flowerPlusImg;
+export const protectBv = protectBvImg;
+export const powerK = powerKImg;
+export const quantumPower = quantumPowerImg;
+export const nutriBoost = nutriBoostImg;
 
 
 export type ProductCategory =

@@ -3,16 +3,16 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroMain from "@/assets/hero-1-main.png.asset.json";
+import heroMain from "@/assets/hero-1-main.png";
 import heroSoil from "@/assets/hero-soil.jpg";
-import heroSprouts from "@/assets/hero-sprouts.png.asset.json";
-import heroLabPlants from "@/assets/hero-lab-plants.png.asset.json";
+import heroSprouts from "@/assets/hero-sprouts.png";
+import heroLabPlants from "@/assets/hero-lab-plants.png";
 
 import heroFarmerField from "@/assets/hero-farmer-field.jpg";
 
 const slides = [
   {
-    image: heroMain.url,
+    image: heroMain,
     noOverlay: true,
     title: "Elkenno product lineup",
   },
@@ -33,7 +33,7 @@ const slides = [
     cta: { label: "Get a Quote", to: "/contact" },
   },
   {
-    image: heroSprouts.url,
+    image: heroSprouts,
     eyebrow: "From Seed to Harvest",
     title: "Helping Every Seed Reach Its Full Potential",
     subtitle:
@@ -41,7 +41,7 @@ const slides = [
     cta: { label: "Explore Products", to: "/products" },
   },
   {
-    image: heroLabPlants.url,
+    image: heroLabPlants,
     eyebrow: "Agri-Science",
     title: "Research-Driven Organic Innovation",
     subtitle:

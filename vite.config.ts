@@ -6,6 +6,7 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [react(), tailwindcss(), tsconfigPaths()],
+  base: '/elkennolifesciences-89b16aba/',
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
   },

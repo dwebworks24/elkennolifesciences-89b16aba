@@ -11,7 +11,7 @@ import SuccessMarquee from "@/components/SuccessMarquee";
 import { products } from "@/data/products";
 import { Leaf, Sprout, TrendingUp, Recycle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import aboutImg from "@/assets/about.png.asset.json";
+import aboutImg from "@/assets/about.png";
 import statsBg from "@/assets/stats-bg.jpg";
 
 const valueProps = [
@@ -63,7 +63,7 @@ export default function Home() {
             <div className="absolute -top-4 -left-4 h-24 w-24 rounded-2xl bg-accent/30 -z-10" />
             <div className="absolute -bottom-4 -right-4 h-32 w-32 rounded-2xl bg-primary/20 -z-10" />
             <img
-              src={aboutImg.url}
+              src={aboutImg}
               alt="Elkenno product lineup"
               loading="lazy"
               width={1280}

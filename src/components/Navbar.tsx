@@ -40,7 +40,7 @@ export default function Navbar() {
           aria-label="Elkenno Life Sciences home"
         >
           <img
-            src="/elkenno-logo.png"
+            src="./elkenno-logo.png"
             alt="Elkenno Life Sciences"
             className="h-16 md:h-20 w-auto"
             width={180}
