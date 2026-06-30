@@ -3,10 +3,11 @@ const bestSoil = "/best-soil.png";
 const kennoGrow = "/kenno-grow.png";
 const calkenno = "/calkenno.png";
 const flowerPlus = "/flower-plus.png";
-import protectBv from "@/assets/kennoscore.png.asset.json";
-import powerK from "@/assets/power-k.png.asset.json";
-import quantumPower from "@/assets/quantum-power.png.asset.json";
-import nutriBoost from "@/assets/nutri-boost.png.asset.json";
+const protectBv = "/kennoscore.png";
+const powerK = "/power-k.png";
+const quantumPower = "/quantum-power.png";
+const nutriBoost = "/nutri-boost.png";
+
 
 export type ProductCategory =
   | "Granular Fertilizers"
