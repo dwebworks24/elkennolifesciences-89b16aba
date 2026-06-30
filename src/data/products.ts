@@ -101,7 +101,7 @@ export const products: Product[] = [
     name: "Protect-BV",
     category: "Plant Protection",
     tag: "Bio-Pesticide",
-    image: protectBv.url,
+    image: protectBv,
     short:
       "Eco-friendly bio-pesticide that protects crops from pests and diseases while being safe for plants and the environment.",
     details:
