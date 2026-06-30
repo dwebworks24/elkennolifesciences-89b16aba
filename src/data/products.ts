@@ -149,7 +149,7 @@ export const products: Product[] = [
     name: "Quantum Power",
     category: "Micronutrient Fertilizers",
     tag: "Micronutrient Mix",
-    image: quantumPower.url,
+    image: quantumPower,
     short:
       "Complete micronutrient fertilizer that corrects nutrient deficiencies and promotes balanced, high-quality crop growth.",
     details:
