@@ -133,7 +133,7 @@ export const products: Product[] = [
     name: "Power-K",
     category: "Potassium Fertilizers",
     tag: "Potassium Rich",
-    image: powerK.url,
+    image: powerK,
     short:
       "Potassium-rich liquid fertilizer for improved flowering, fruiting, stress tolerance, and overall plant health.",
     details:
