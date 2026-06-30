@@ -165,7 +165,7 @@ export const products: Product[] = [
     name: "Nutri Boost",
     category: "Growth Promoters",
     tag: "Nutrient Booster",
-    image: nutriBoost.url,
+    image: nutriBoost,
     short:
       "Organic nutrient booster that enhances absorption, stimulates growth, and increases natural yield potential.",
     details:
