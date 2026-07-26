@@ -136,7 +136,7 @@ export default function Contact() {
               <ul className="mt-4 space-y-4 text-sm">
                 {[
                   { Icon: MapPin, label: "# 14-20-677/45/A, New Vivekanada Nagar, Borabanda, Hyderabad-500018" },
-                  { Icon: Phone, label: "+91 90003 18873" },
+                  { Icon: Phone, label: "+91 90003 18874" },
                   { Icon: Mail, label: "elkennolifesciences@gmail.com" },
                   { Icon: Clock, label: "Mon–Sat, 9:00 AM – 6:00 PM IST" },
                 ].map(({ Icon, label }) => (
