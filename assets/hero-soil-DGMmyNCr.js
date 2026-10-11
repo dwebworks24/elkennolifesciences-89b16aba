@@ -1,0 +1,1 @@
+var e=`/assets/hero-soil-C_i256iQ.jpg`;export{e as t};

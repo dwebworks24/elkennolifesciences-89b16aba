@@ -1,0 +1,1 @@
+import{X as e,v as t}from"./vendor-react-B_t-6MOM.js";var n=t();function r({title:t,description:r}){return(0,n.jsxs)(e,{children:[(0,n.jsx)(`title`,{children:t}),r&&(0,n.jsx)(`meta`,{name:`description`,content:r}),(0,n.jsx)(`meta`,{property:`og:title`,content:t}),r&&(0,n.jsx)(`meta`,{property:`og:description`,content:r})]})}export{r as t};

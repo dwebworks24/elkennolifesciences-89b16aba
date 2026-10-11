@@ -1,0 +1,1 @@
+var e=`/assets/about-lab-DZfKx0mU.jpg`;export{e as t};
