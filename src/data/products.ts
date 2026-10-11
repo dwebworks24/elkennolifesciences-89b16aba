@@ -1,19 +1,24 @@
 import rudhraImg from "@/assets/products/rudhra.png";
+import rudhra999Img from "@/assets/products/rudhra-999.png";
 import bestSoilImg from "@/assets/products/best-soil.png";
 import kennoGrowImg from "@/assets/products/kenno-grow.png";
 import calkennoImg from "@/assets/products/calkenno.png";
 import flowerPlusImg from "@/assets/products/flower-plus.png";
-import protectBvImg from "@/assets/products/kennoscore.png";
+import protectVbImg from "@/assets/products/Protect-BV.png";
+import kennoScoreImg from "@/assets/products/kennoscore.png";
 import powerKImg from "@/assets/products/power-k.png";
 import quantumPowerImg from "@/assets/products/quantum-power.png";
 import nutriBoostImg from "@/assets/products/nutri-boost.png";
 
 export const rudhra = rudhraImg;
+export const rudhra999 = rudhra999Img;
 export const bestSoil = bestSoilImg;
 export const kennoGrow = kennoGrowImg;
 export const calkenno = calkennoImg;
 export const flowerPlus = flowerPlusImg;
-export const protectBv = protectBvImg;
+export const protectBv = protectVbImg;
+export const protectVb = protectVbImg;
+export const kennoScore = kennoScoreImg;
 export const powerK = powerKImg;
 export const quantumPower = quantumPowerImg;
 export const nutriBoost = nutriBoostImg;
@@ -59,10 +64,27 @@ export const products: Product[] = [
     ],
   },
   {
+    id: "rudhra-999",
+    name: "Rudhra 999",
+    category: "Plant Protection",
+    tag: "Mixture of essential Oils",
+    image: rudhra999,
+    short:
+      "Naturally derived organic plant protector delivering powerful crop defense against destructive pests and pathogens.",
+    details:
+      "Rudhra 999 is a naturally derived organic product formulated for comprehensive crop protection. It combines botanical and biological actives to neutralize crop pests and diseases effectively while maintaining complete safety for soil biology and produce quality.",
+    benefits: [
+      "Naturally derived broad-spectrum plant defense",
+      "Fast-acting protection against pests and pathogens",
+      "Zero harmful chemical residues",
+      "100% organic formulation",
+    ],
+  },
+  {
     id: "best-soil",
     name: "Best Soil",
-    category: "Liquid Fertilizers",
-    tag: "Foliar Spray",
+    category: "Soil Conditioners",
+    tag: "Soil Conditioner",
     image: bestSoil,
     short:
       "Seaweed-enriched organic liquid bio-fertilizer that improves soil health and supports vigorous plant growth.",
@@ -107,19 +129,35 @@ export const products: Product[] = [
     ],
   },
   {
-    id: "protect-bv",
-    name: "Protect-BV",
+    id: "protect-vb",
+    name: "Protect-VB",
     category: "Plant Protection",
-    tag: "Bio-Pesticide",
-    image: protectBv,
+    tag: "Bio-Protectant",
+    image: protectVb,
     short:
-      "Eco-friendly bio-pesticide that protects crops from pests and diseases while being safe for plants and the environment.",
+      "Organic biostimulant that shields crops against viral and bacterial diseases while supporting natural plant immunity.",
     details:
-      "Protect-BV is a broad-spectrum organic bio-pesticide that targets common crop pests and pathogens. Its microbial and botanical composition makes it safe for repeated application and compatible with integrated pest management programs.",
+      "Protect-VB is an advanced organic biostimulant formulated to protect plants against viral and bacterial diseases. It induces natural systemic defense mechanisms, enhances crop vigor, and ensures residue-free healthy produce.",
     benefits: [
-      "Controls pests and diseases naturally",
-      "Safe for environment and applicators",
-      "Compatible with IPM practices",
+      "Protects against viral and bacterial diseases",
+      "Stimulates natural immunity and plant vigor",
+      "100% organic, safe and residue-free",
+    ],
+  },
+  {
+    id: "kenno-score",
+    name: "Kenno Score",
+    category: "Plant Protection",
+    tag: "Bio-Fungicide",
+    image: kennoScore,
+    short:
+      "Eco-friendly bio-fungicide that defends crops against fungal pathogens, leaf spots, and mildews naturally.",
+    details:
+      "Kenno Score provides powerful protection against fungal diseases by inhibiting fungal spore development and boosting the crop's internal defense system. Safe for pollinators, applicators, and food crops.",
+    benefits: [
+      "Broad-spectrum fungal disease defense",
+      "Inhibits spore germination and spread",
+      "Safe for beneficial insects and environment",
     ],
   },
   {
