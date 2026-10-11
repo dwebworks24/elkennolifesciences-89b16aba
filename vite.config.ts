@@ -10,14 +10,19 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
   },
-  // server: {
-  //   host: "::",
-  //   port: Number(process.env.PORT) || 8080,
-  //   strictPort: true,
-  // },
-  // preview: {
-  //   host: "::",
-  //   port: Number(process.env.PORT) || 8080,
-  //   strictPort: true,
-  // },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("react") || id.includes("react-dom") || id.includes("react-router-dom")) {
+              return "vendor-react";
+            }
+            return "vendor";
+          }
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 });
